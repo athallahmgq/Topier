@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ION Icons CDN -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Plus Jakarta Sans Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- flowbite CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+    <!-- link -->
+     <link rel="stylesheet" href="css/brandscroll.css">
+     <link rel="stylesheet" href="css/frequentlyasked.css">
+     <link rel="stylesheet" href="css/splashscreen.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Topier</title>
+
+    <!-- Style & Script -->
+    <style>
+        .font-jakarta {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .container-popular {
+            width: 90vw;
+            padding-bottom: 35px;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            row-gap: 50px;
+            column-gap: 1.2%;
+        }
+
+
+
+
+        @media screen and (max-width:1000px) {
+            .container-popular {
+                grid-template-columns: 50% 50%;
+                column-gap: 30px;
+            }
+        }
+
+        @media screen and (max-width:590px) {
+            .container-popular {
+                grid-template-columns: 100%;
+                row-gap: 30px;
+                column-gap: 0;
+            }
+        }
+    </style>
+
+    <script>
+        tailwind.config ={
+            theme:{
+                extend: {
+    animation: {
+      marquee: 'marquee 20s linear infinite',
+      marquee2: 'marquee2 20s linear infinite',
+    },
+    keyframes: {
+      marquee: {
+        '0%': { transform: 'translateX(0%)' },
+        '100%': { transform: 'translateX(-100%)' },
+      },
+      marquee2: {
+        '0%': { transform: 'translateX(100%)' },
+        '100%': { transform: 'translateX(0%)' },
+      },
+    },
+  }
+            }
+        }
+    </script>
+
+<script src="js/splashscreen.js"></script>
+</head>
+
+<body class="font-jakarta overflow-x-hidden">
+    <!--* Company Profile Website (New Era Theme) -->
+    <!-- Splash Screen -->
+
+    <div class="splash-container">
+        <div class="text-container">
+            <h1 class="animated-text">Hello</h1>
+        </div>
+    </div>
+
+     <!-- Splash Screen -->
+
+    <!--! Notifications -->
+
+    <div id="marketing-banner" tabindex="-1"
+        class="fixed z-[8000] flex flex-col md:flex-row justify-between w-[90%] p-4 -translate-x-1/2 bg-white border border-gray-300 rounded-lg shadow-sm left-1/2 top-2 ">
+        <div  class="flex flex-col items-start mb-3 me-4 md:items-center md:flex-row md:mb-0">
+            <a href="https://flowbite.com/"
+                class="flex items-center mb-2 border-gray-200 md:pe-4 md:me-4 md:border-e md:mb-0 dark:border-gray-600">
+                <span class="self-center text-lg font-bold whitespace-nowrap text-black">To<span class="text-purple-700">p</span>ier.</span>
+            </a>
+            <p class="flex items-center text-sm font-normal text-gray-500">This Website is made by Athallah MGQ
+            </p>
+        </div>
+        <div class="flex items-center flex-shrink-0">
+            <a href="https://github.com/athallahmgq"
+                class="px-5 py-2 me-2 text-xs font-medium text-white bg-purple-700 hover:scale-[110%] duration-200 rounded-lg">Get
+                to know Athallah</a>
+            <button data-dismiss-target="#marketing-banner" type="button"
+                class="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 rounded-lg text-sm p-1.5 hover:bg-black hover:text-white duration-200">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close banner</span>
+            </button>
+        </div>
+    </div>
+    <!--! Notifications -->
+
+    <!--! Navigation Bar -->
+
+    <section id="navbar" class="navbar a w-full border-b py-2 bg-white fixed top-0 z-50">
+        <nav class="flex flex-row w-full max-md:w-5/6 mx-auto justify-around items-center ">
+            <div class="logo flex w-1/5 justify-start items-center max-lg:w-2/5 hover:saturate-200 duration-300">
+                <h1 class="text-2xl text-black font-bold ">To<span class="text-purple-700">p</span>ier.</h1>
+            </div>
+            <div
+                class="items md:min-h-fit top-28 -right-40 w-auto md:flex justify-center md:static absolute duration-300">
+                <ul class="flex text-base text-gray-700 md:flex-row items-end flex-col ml-5 gap-8 max-md:gap-6">
+                    <li><a class="font-semibold hover:text-xl hover:text-purple-700  duration-300 max-md:bg-white p-2 rounded max-md:border border-black"
+                            href="#new">New</a></li>
+                    <li><a class="font-semibold hover:text-xl hover:text-purple-700  duration-300 max-md:bg-white p-2 rounded max-md:border border-black"
+                            href="#popular">Popular</a></li>
+                    <li><a class="font-semibold hover:text-xl hover:text-purple-700  duration-300 max-md:bg-white p-2 rounded max-md:border border-black"
+                            href="#product">Product</a></li>
+                     <li><a class="font-semibold hover:text-xl hover:text-purple-700  duration-300 max-md:bg-white p-2 rounded max-md:border border-black"
+                            href="#explore">Explore</a></li>
+                </ul>
+            </div>
+            <div class="btn flex w-1/5 justify-end items-center max-lg:h-14 max-lg:w-2/5">
+                <input type="text" placeholder="Search" class="border-gray-300 p-2 rounded-md h-full w-full">
+                <ion-icon class="size-14 hover:cursor-pointer md:hidden ml-2" onclick="onToggle(this)" name="menu">
+                </ion-icon>
+            </div>
+        </nav>
+    </section>
+
+    <!--! Navigation Bar -->
+
+    <!--! Hero -->
+
+    <section class="text-gray-600 body-font">
+    <div class="container mt-20 mx-auto flex px-5 py-24 md:flex-row flex-col items-center ">
+      <div  class="  lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <div class="absolute w-auto inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-purple-700 to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+        <div data-aos="fade-right" class=" mb-6 relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            Tempat Mencari Topi Terbaik ,<a href="#" class="font-semibold text-purple-700"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+          </div>
+
+        <h1 data-aos="fade-right" class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Jenis Topi🧢 <br>Apapun Ada disini!</h1>
+        
+        <p data-aos="fade-right" class="mt-6 text-lg leading-8 text-gray-600">Kami menawarkan koleksi topi yang bervariasi, dari yang klasik hingga yang modis, untuk memenuhi semua kebutuhan fashion Anda. Apakah Anda mencari topi baseball yang nyaman, fedora yang elegan, atau topi beanie yang hangat, kami memiliki semua yang Anda butuhkan untuk melengkapi penampilan Anda.</p>
+        <div data-aos="fade-right" class=" mt-10 flex items-center justify-start gap-x-6">
+            <a href="#" class="rounded-md bg-purple-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+          </div>
+      </div>
+      <div data-aos="fade-left" class=" lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class=" object-cover object-center rounded hover:animate-bounce " alt="hero" src="img/new_era_new_york_yankees_59fifty_fitted_cap_1uMTJn5RuqsivI-removebg-preview.png">
+      </div>
+      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr bg-purple-700 to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+  
+    </div>
+   </section>
+
+    <!--! Hero -->
+
+    <!-- Brand Scroll -->
+
+    <section class="partners-section">
+          <div  class="logos-slider">
+            <div class="overflow-slider">
+              <div class="logos-wrapper">
+                <div class="logos-item hover:bg-purple-700">
+                  <img src="https://seeklogo.com/images/N/new-era-logo-B4901774AA-seeklogo.com.png" alt="" />
+                </div>
+                <div class="logos-item hover:bg-purple-700 ">
+                  <img src="https://www.transparentpng.com/thumb/nike-logo/ZFwcg2-nike-logo-cut-out.png" alt="" />
+                </div>
+                <div class="logos-item hover:bg-purple-700">
+                  <img src="https://www.freepnglogos.com/uploads/adidas-logo-photo-png-3.png" alt="" />
+                </div>
+                <div class="logos-item hover:bg-purple-700">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/640px-Major_League_Baseball_logo.svg.png" alt="" />
+                </div>
+                <div class="logos-item hover:bg-purple-700">
+                  <img src="https://seeklogo.com/images/P/puma-se-logo-ACC0F72575-seeklogo.com.png" alt="" />
+                </div>
+              </div>
+  
+              <div class="logos-wrapper">
+                <div class="logos-item hover:bg-purple-700">
+                  <img src="https://s.yimg.com/cv/apiv2/default/mlb/20190403/500x500/phillies_s.png" alt="" />
+                </div>
+                <div class="logos-item hover:bg-purple-700">
+                  <img src="https://loodibee.com/wp-content/uploads/nfl-league-logo.png" alt="" />
+                </div>
+                <div class="logos-item hover:bg-purple-700">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Carhartt_logo.svg/640px-Carhartt_logo.svg.png" alt="" />
+                </div>
+                <div class="logos-item hover:bg-purple-700">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/The_North_Face.png" alt="" />
+                </div>
+                <div class="logos-item hover:bg-purple-700">
+                  <img src="https://www.pngall.com/wp-content/uploads/15/LA-Dodgers-Logo-PNG-Image-File.png" alt="" />
+                </div>
+              </div>
+            </div>
+  
+            <div class="overflow-slider reverse">
+              <div class="logos-wrapper">
+                <div class="logos-item hover:bg-purple-700">
+                  <img src="https://seeklogo.com/images/N/new-era-logo-B4901774AA-seeklogo.com.png" alt="" />
+                </div>
+                <div class="logos-item hover:bg-purple-700">
+                    <img src="https://www.transparentpng.com/thumb/nike-logo/ZFwcg2-nike-logo-cut-out.png" alt="" />
+                  </div>
+                  <div class="logos-item hover:bg-purple-700">
+                    <img src="https://www.freepnglogos.com/uploads/adidas-logo-photo-png-3.png" alt="" />
+                  </div>
+                  <div class="logos-item hover:bg-purple-700">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/640px-Major_League_Baseball_logo.svg.png" alt="" />
+                  </div>
+                  <div class="logos-item hover:bg-purple-700">
+                    <img src="https://seeklogo.com/images/P/puma-se-logo-ACC0F72575-seeklogo.com.png" alt="" />
+                  </div>
+                </div>
+    
+                <div class="logos-wrapper">
+                  <div class="logos-item hover:bg-purple-700">
+                    <img src="https://s.yimg.com/cv/apiv2/default/mlb/20190403/500x500/phillies_s.png" alt="" />
+                  </div>
+                  <div class="logos-item hover:bg-purple-700">
+                    <img src="https://loodibee.com/wp-content/uploads/nfl-league-logo.png" alt="" />
+                  </div>
+                  <div class="logos-item hover:bg-purple-700">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Carhartt_logo.svg/640px-Carhartt_logo.svg.png" alt="" />
+                  </div>
+                  <div class="logos-item hover:bg-purple-700">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/The_North_Face.png" alt="" />
+                  </div>
+                  <div class="logos-item hover:bg-purple-700 ">
+                    <img src="https://www.pngall.com/wp-content/uploads/15/LA-Dodgers-Logo-PNG-Image-File.png" alt="" />
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+
+    <!-- Brand Scroll -->
+
+    <!-- New Section -->
+
+    <section id="new" class="w-full h-screen flex flex-col items-center justify-center">
+        <div data-aos="flip-up"  class=" w-[90%] h-[55%] hover:brightness-125 duration-150 rounded-xl bg-[url(https://www.neweracap.com/cdn/shop/files/NEC_NFL24_Sidelines_HomePage_framesFull_Bleed_Desktop_1440x1270_5f782c79-7b3c-4c1d-aff1-ceb54b499983.jpg?v=1724762546&width=1280)] bg-no-repeat bg-center bg-cover">
+        </div>
+        <div data-aos="fade-up" class="title-cap w-auto h-auto my-7 text-center">
+            <h2 class="text-xl md:text-3xl font-bold mb-3">TOPIER CAP</h2>
+            <h2 class="text-2xl md:text-6xl font-bold mb-3">"NFL SIDELINE"</h2>
+            <h2 class="text-xs md:text-sm font-regular"><p>New season, new style. Freshen up your game day gear with NFL 3rd <br> Down apparel and Official NFL Sideline headwear.</p>    
+               <br> "Kansas City Chiefs"</h2>
+        </div>
+        <div data-aos="fade-up" class="button-shop">
+            <a href="#"
+                class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1">
+                <span
+                    class="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-900 via-purple-600 to-purple-400"></span>
+                <span
+                    class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                <span class="relative text-white">Seek Greatness</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- New Section -->
+
+    <!-- Popular Section -->
+
+    <section id="popular" class="w-full h-[90vh] flex flex-col justify-center items-center">
+        <div data-aos="zoom-in-down" class="title w-auto h-auto md:mb-5">
+            <h1 class="text-2xl md:text-3xl font-extrabold">THE POPULAR <span class="text-purple-700 italic" >CAP'S</span></h1>
+        </div>
+
+        <div class="card-container w-[90%] h-3/4 py-3 px-3 flex flex-row justify-center">
+            <div data-aos="zoom-in-right" class="card w-[33%] h-full flex flex-col justify-center items-center mr-5 hover:cursor-pointer">
+                <img src="https://www.neweracap.com/cdn/shop/files/NEC_MLB24_City_Connect_HomePage_framesFull_Bleed_Desktop_1440x1270_6b2018ab-5f72-4a16-a056-737bbced961e.jpg?v=1715606877&width=1280"
+                    alt="" class="w-full h-3/4 object-cover hover:brightness-125 duration-150  rounded-tl-xl rounded-bl-xl">
+                <div data-aos="zoom-out-up" class="text w-full h-auto hidden md:my-5 md:block">
+                    <h2 class="text-xl font-medium text-center">MLB CITY Series</h2>
+                </div>
+
+                <a data-aos="zoom-out-up" href="#"
+                class="relative flex items-start justify-start p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1">
+                <span
+                    class="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-900 via-purple-600 to-purple-400"></span>
+                <span
+                    class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                <span class="relative text-white">Look More</span>
+            </a>
+            </div>
+
+            <!-- Batas Card -->
+
+            <div data-aos="zoom-out-up" class="card w-[33%] h-full flex flex-col justify-center items-center hover:cursor-pointer">
+                <img src="https://www.neweracap.com/cdn/shop/files/NCAA24_CollegeCollection_HomePage_FeatureSquareSlideshow_1500x1500_c2fbc029-b1b8-458d-bd2a-28bb20ca2609.jpg?v=1725458678&width=320"
+                    alt="" class="w-full h-3/4 object-cover hover:brightness-125 duration-150">
+                <div data-aos="zoom-out-up" class="text w-full h-auto hidden md:my-5 md:block">
+                    <h2 class="text-xl font-medium text-center">College Series</h2>
+                </div>
+                <a data-aos="zoom-out-up" href="#"
+                class="relative flex items-start justify-start p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1">
+                <span
+                    class="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-900 via-purple-600 to-purple-400"></span>
+                <span
+                    class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                <span class="relative text-white">Look More</span>
+            </a>
+            </div>
+
+            <!-- Batas Card -->
+
+            <div data-aos="zoom-in-left" class="card w-[33%] h-full flex flex-col justify-center items-center ml-5 hover:cursor-pointer">
+                <img src="https://www.neweracap.com/cdn/shop/files/NECXMLBXALPHA_HomePage_framesHeroMobile_800x1000_056a4bcf-f975-4b0f-9cdd-66c72414d7df.jpg?v=1725626755&width=400"
+                    alt="" class="w-full h-3/4 object-cover hover:brightness-125 duration-150 rounded-tr-xl rounded-br-xl">
+                <div data-aos="zoom-out-up" class="text w-full h-auto hidden md:my-5 md:block">
+                    <h2 class="text-xl font-medium text-center">MLB x Alpha Industries Series</h2>
+                </div>
+                <a data-aos="zoom-out-up" href="#"
+                class="relative flex items-start justify-start p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1">
+                <span
+                    class="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-900 via-purple-600 to-purple-400"></span>
+                <span
+                    class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                <span class="relative text-white">Look More</span>
+            </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Popular Section -->
+
+    <!-- Product Section -->
+
+    <section  id="product" class="  text-gray-600 body-font">
+        <div data-aos="zoom-out-up" class="flex items-center bg-white w-screen min-h-screen" style="font-family: 'Muli', sans-serif;">
+            
+            <div class="container ml-auto mr-auto flex flex-wrap items-start">
+
+                <div class="relative flex overflow-x-hidden mb-20 mt-20 ">
+                    <div class="py-12 animate-marquee whitespace-nowrap">
+                      <span class="mx-4 text-6xl text-purple-700 font-extrabold italic">PRODUCT</span>
+                      <span class="mx-4 text-6xl text-black font-bold">PRODUCT</span>
+                      <span class="mx-4 text-6xl text-purple-700 font-extrabold italic">PRODUCT</span>
+                      <span class="mx-4 text-6xl text-black font-bold">PRODUCT</span>
+                      <span class="mx-4 text-6xl text-purple-700 font-extrabold italic">PRODUCT</span>
+                    </div>
+                  
+                    <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+                      <span class="mx-4 text-6xl text-black font-bold">PRODUCT</span>
+                      <span class="mx-4 text-6xl text-purple-700 font-extrabold italic">PRODUCT</span>
+                      <span class="mx-4 text-6xl text-black font-bold">PRODUCT</span>
+                      <span class="mx-4 text-6xl text-purple-700 font-extrabold italic">PRODUCT</span>
+                      <span class="mx-4 text-6xl text-black font-bold">PRODUCT</span>
+                    </div>
+                  </div>
+              
+              <div  class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                  <figure class="mb-2  ">
+                    <img src="https://hatstore.imgix.net/196499573948_6.jpg?rect=.006%2C.022%2C.988%2C.925&crop=left%2Ctop&fit=clip&q=80&h=1357&w=1206&auto=compress%2Cformat" alt="" class="h-64 hover:brightness-125 ml-auto mr-auto" />
+                  </figure>
+                  <div class="rounded-lg p-4 bg-purple-700 flex flex-col">
+                    <div>
+                      <h5 class="text-white text-2xl font-bold leading-none">
+                        Los Angeles Dodgers 
+                      </h5>
+                      <span class="text-xs text-gray-300 leading-none">MLB Floral 59FIFTY Royal Fitted.</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-lg text-white font-light">
+                        Rp799.000
+                      </div>
+                      <button href="javascript:;" class="rounded-full bg-purple-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Batas Card -->
+
+
+              <div data-aos="zoom-out-up" class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                  <figure class="mb-2">
+                    <img src="https://hatstore.imgix.net/HS2110860-6_6.jpg?rect=.006%2C.022%2C.988%2C.925&crop=left%2Ctop&fit=clip&q=80&h=1357&w=1206&auto=compress%2Cformat" alt="" class="h-64 hover:brightness-125 ml-auto mr-auto" />
+                  </figure>
+                  <div class="rounded-lg p-4 bg-purple-600 flex flex-col">
+                    <div>
+                      <h5 class="text-white text-2xl font-bold leading-none">
+                        Oakland Athletics 
+                      </h5>
+                      <span class="text-xs text-gray-300 leading-none">On-Field 59Fifty Green/Yellow Fitted.</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-lg text-white font-light">
+                        Rp699.000
+                      </div>
+                      <button href="javascript:;" class="rounded-full bg-purple-800 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+               <!-- Batas Card -->
+
+
+              <div data-aos="zoom-out-up" class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                  <figure class="mb-2">
+                    <img src="https://hatstore.imgix.net/196500566532_6.jpg?rect=.006%2C.022%2C.988%2C.925&crop=left%2Ctop&fit=clip&q=80&h=1357&w=1206&auto=compress%2Cformat" alt="" class="h-64 hover:brightness-125 ml-auto mr-auto" />
+                  </figure>
+                  <div class="rounded-lg p-4 bg-purple-700 flex flex-col">
+                    <div>
+                      <h5 class="text-white text-2xl font-bold leading-none">
+                        Boston Red Sox
+                      </h5>
+                      <span class="text-xs text-gray-300 leading-none">59FIFTY Chainstitchheart Navy Fitted.</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-lg text-white font-light">
+                        Rp899.000
+                      </div>
+                      <button href="javascript:;" class="rounded-full bg-gray-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+               <!-- Batas Card -->
+
+
+              <div data-aos="zoom-out-up" class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                  <figure class="mb-2">
+                    <img src="https://hatstore.imgix.net/198058816763_6.jpg?rect=.006%2C.022%2C.988%2C.925&crop=left%2Ctop&fit=clip&q=80&h=1357&w=1206&auto=compress%2Cformat" alt="" class="h-64 hover:brightness-125 ml-auto mr-auto" />
+                  </figure>
+                  <div class="rounded-lg p-4 bg-purple-600 flex flex-col">
+                    <div>
+                      <h5 class="text-white text-2xl font-bold leading-none">
+                        Green Bay Packers
+                      </h5>
+                      <span class="text-xs text-gray-300 leading-none">Otc NFL 59FIFTY Dark Green Fitted.</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-lg text-white font-light">
+                        Rp750.000
+                      </div>
+                      <button href="javascript:;" class="rounded-full bg-gray-800 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+               <!-- Batas Card -->
+
+
+
+               <div data-aos="zoom-out-up" class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                  <figure class="mb-2  ">
+                    <img src="https://hatstore.imgix.net/196313086593_6.jpg?rect=.006%2C.022%2C.988%2C.925&crop=left%2Ctop&fit=clip&q=80&h=1357&w=1206&auto=compress%2Cformat" alt="" class="h-64 hover:brightness-125 ml-auto mr-auto" />
+                  </figure>
+                  <div class="rounded-lg p-4 bg-purple-700 flex flex-col">
+                    <div>
+                      <h5 class="text-white text-2xl font-bold leading-none">
+                        Arizona Diamondbacks 
+                      </h5>
+                      <span class="text-xs text-gray-300 leading-none">Arch 9FIFTY Purple/Teal Snapback.</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-lg text-white font-light">
+                        Rp699.000
+                      </div>
+                      <button href="javascript:;" class="rounded-full bg-purple-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Batas Card -->
+
+
+              <div data-aos="zoom-out-up" class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                  <figure class="mb-2">
+                    <img src="https://hatstore.imgix.net/195132064812_5.jpg?rect=.006%2C.022%2C.988%2C.925&crop=left%2Ctop&fit=clip&q=80&h=1357&w=1206&auto=compress%2Cformat" alt="" class="h-64 hover:brightness-125 ml-auto mr-auto" />
+                  </figure>
+                  <div class="rounded-lg p-4 bg-purple-600 flex flex-col">
+                    <div>
+                      <h5 class="text-white text-2xl font-bold leading-none">
+                        Milwaukee Brewers Authentic 
+                      </h5>
+                      <span class="text-xs text-gray-300 leading-none">On-Field 59Fifty Navy Fitted.</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-lg text-white font-light">
+                        Rp599.000
+                      </div>
+                      <button href="javascript:;" class="rounded-full bg-purple-800 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+               <!-- Batas Card -->
+
+
+              <div data-aos="zoom-out-up" class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                  <figure class="mb-2">
+                    <img src="https://hatstore.imgix.net/196312052582_6.jpg?rect=.006%2C.022%2C.988%2C.925&crop=left%2Ctop&fit=clip&q=80&h=1357&w=1206&auto=compress%2Cformat" alt="" class="h-64 hover:brightness-125 ml-auto mr-auto" />
+                  </figure>
+                  <div class="rounded-lg p-4 bg-purple-700 flex flex-col">
+                    <div>
+                      <h5 class="text-white text-2xl font-bold leading-none">
+                        Cleveland Guardians MLB22
+                      </h5>
+                      <span class="text-xs text-gray-300 leading-none">Mothers Day 59FIFTY Grey Fitted.</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-lg text-white font-light">
+                        Rp599.000
+                      </div>
+                      <button href="javascript:;" class="rounded-full bg-gray-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+               <!-- Batas Card -->
+
+
+              <div data-aos="zoom-out-up" class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                  <figure class="mb-2">
+                    <img src="https://hatstore.imgix.net/198058816466_6.jpg?rect=.006%2C.022%2C.988%2C.925&crop=left%2Ctop&fit=clip&q=80&h=1357&w=1206&auto=compress%2Cformat" alt="" class="h-64 hover:brightness-125 ml-auto mr-auto" />
+                  </figure>
+                  <div class="rounded-lg p-4 bg-purple-600 flex flex-col">
+                    <div>
+                      <h5 class="text-white text-2xl font-bold leading-none">
+                        Miami Dolphins NFL Special
+                      </h5>
+                      <span class="text-xs text-gray-300 leading-none">59FIFTY Teal Fitted.</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-lg text-white font-light">
+                        Rp750.000
+                      </div>
+                      <button href="javascript:;" class="rounded-full bg-gray-800 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Batas Card -->
+
+
+              <div data-aos="zoom-out-up" class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                  <figure class="mb-2  ">
+                    <img src="https://hatstore.imgix.net/887757524450_5.jpg?rect=.006%2C.022%2C.988%2C.925&crop=left%2Ctop&fit=clip&q=80&h=1357&w=1206&auto=compress%2Cformat" alt="" class="h-64 hover:brightness-125 ml-auto mr-auto" />
+                  </figure>
+                  <div class="rounded-lg p-4 bg-purple-700 flex flex-col">
+                    <div>
+                      <h5 class="text-white text-2xl font-bold leading-none">
+                        LA Lakers 59Fifty Basic
+                      </h5>
+                      <span class="text-xs text-gray-300 leading-none">Yellow/Purple Fitted.</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-lg text-white font-light">
+                        Rp699.000
+                      </div>
+                      <button href="javascript:;" class="rounded-full bg-purple-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Batas Card -->
+
+
+              <div data-aos="zoom-out-up" class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                  <figure class="mb-2">
+                    <img src="https://hatstore.imgix.net/HS2112948-1_5.jpg?rect=.006%2C.022%2C.988%2C.925&crop=left%2Ctop&fit=clip&q=80&h=1357&w=1206&auto=compress%2Cformat" alt="" class="h-64 hover:brightness-125 ml-auto mr-auto" />
+                  </figure>
+                  <div class="rounded-lg p-4 bg-purple-600 flex flex-col">
+                    <div>
+                      <h5 class="text-white text-2xl font-bold leading-none">
+                        Chicago Bulls NBA Basic
+                      </h5>
+                      <span class="text-xs text-gray-300 leading-none">59Fifty Red/Black Fitted.</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-lg text-white font-light">
+                        Rp599.000
+                      </div>
+                      <button href="javascript:;" class="rounded-full bg-purple-800 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+               <!-- Batas Card -->
+
+
+              <div data-aos="zoom-out-up" class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                  <figure class="mb-2">
+                    <img src="https://hatstore.imgix.net/887757524832_5.jpg?rect=.006%2C.022%2C.988%2C.925&crop=left%2Ctop&fit=clip&q=80&h=1357&w=1206&auto=compress%2Cformat" alt="" class="h-64 hover:brightness-125 ml-auto mr-auto" />
+                  </figure>
+                  <div class="rounded-lg p-4 bg-purple-700 flex flex-col">
+                    <div>
+                      <h5 class="text-white text-2xl font-bold leading-none">
+                        Boston Celtics NBA Basic
+                      </h5>
+                      <span class="text-xs text-gray-300 leading-none">Green 59Fifty Fitted.</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-lg text-white font-light">
+                        Rp599.000
+                      </div>
+                      <button href="javascript:;" class="rounded-full bg-gray-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+               <!-- Batas Card -->
+
+
+              <div data-aos="zoom-out-up" class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+                <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                  <figure class="mb-2">
+                    <img src="https://hatstore.imgix.net/887757524320_5.jpg?rect=.006%2C.022%2C.988%2C.925&crop=left%2Ctop&fit=clip&q=80&h=1357&w=1206&auto=compress%2Cformat" alt="" class="h-64 hover:brightness-125 ml-auto mr-auto" />
+                  </figure>
+                  <div class="rounded-lg p-4 bg-purple-600 flex flex-col">
+                    <div>
+                      <h5 class="text-white text-2xl font-bold leading-none">
+                        Miami Heat NBA Basic 59Fifty
+                      </h5>
+                      <span class="text-xs text-gray-300 leading-none">Black/Maroon Fitted.</span>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-lg text-white font-light">
+                        Rp750.000
+                      </div>
+                      <button href="javascript:;" class="rounded-full bg-gray-800 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+               <!-- Batas Card -->
+
+               <div class=" w-full mb-20 mt-20 flex justify-center items-center" >
+
+               <a data-aos="zoom-out-up" href="#"
+                class="relative flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1">
+                <span
+                    class="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-900 via-purple-600 to-purple-400"></span>
+                <span
+                    class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                <span class="relative text-white">Look More Cap's</span>
+            </a>
+
+        </div>
+
+
+
+
+               
+            </div>
+          </div>
+      </section>
+
+    <!-- Product Section -->
+
+    <!-- Explore Section -->
+
+    <section id="explore" class="text-white body-font">
+
+        <div data-aos="zoom-out-up" class="title w-auto flex justify-center h-auto md:mb-5">
+            <h1 class="text-2xl md:text-3xl font-extrabold text-black mt-36 ">EXPLORE <span class="text-purple-700 italic ">THE TOPIER CAP'S</span></h1>
+        </div>
+
+        <div class="container py-24 flex flex-wrap">
+          <div class="lg:w-2/3 ">
+            <div data-aos="zoom-out" class="flex flex-wrap w-[83vw]  pt-32 pb-10 pl-10 ml-32 mr-32 relative mb-4">
+              <img alt="gallery" class="rounded-tr-xl rounded-tl-xl w-full object-cover h-full object-center block absolute inset-0 brightness-75 hover:brightness-105 duration-150" src="https://www.neweracap.com/cdn/shop/files/Life24_Ac_Milan_x_Yankees_HomePage_framesFeatureHorizontal_1500x750_e439137d-306b-4ec3-85ad-9b14f025a734.jpg?v=1725975036&width=2560">
+              <div class="text-start mt-96 relative z-10 w-full h-full">
+                <h2 class="text-2xl text-white font-medium title-font mb-2">AC Milan x New York Yankees</h2>
+                <p class="leading-relaxed w-96">New Era Cap has teamed up with the New York Yankees and AC Milan to create an exclusive capsule to celebrate 125 years of the iconic Italian football club. Shop the collection now.</p>
+                
+                <div class=" w-full mb-5 mt-5 flex justify-start items-start" >
+
+                    <a href="#"
+                     class="relative flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1">
+                     <span
+                         class="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-900 via-purple-600 to-purple-400"></span>
+                     <span
+                         class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                     <span class="relative text-white">Shop Collection</span>
+                 </a>
+     
+             </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap -mx-2">
+              <div class="px-2 w-1/2">
+                <div data-aos="zoom-out-right" class="flex flex-wrap w-full sm:py-24 pt-16 pb-0 ml-32 sm:px-10 px-6 relative">
+                  <img alt="gallery" class=" rounded-bl-xl w-full object-cover h-[90%] object-center block brightness-75 hover:brightness-105 duration-150 absolute inset-0" src="https://www.neweracap.com/cdn/shop/files/NEC_LIF24_BXR_X_NFL_HomePage_framesFeatureSquareSlideshow_1500x1500_5a1df0e4-a767-49b5-b9da-5b5c9ea38b56.jpg?v=1725628680&width=2560">
+                  <div class="text-start mt-72 pb-0 relative z-10 w-full">
+                    <h2 class="text-xl text-white font-medium title-font mb-1">Born x Raised x NFL</h2>
+                    <p class="leading-relaxed">New season, new BxR. Check out the latest NFL Collection from Born x Raised now.</p>
+                    <div class=" w-full mb-5 mt-5 flex justify-start items-start" >
+
+                        <a href="#"
+                         class="relative flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1">
+                         <span
+                             class="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-900 via-purple-600 to-purple-400"></span>
+                         <span
+                             class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                         <span class="relative text-white">Shop Collection</span>
+                     </a>
+         
+                 </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="px-2 w-1/2">
+                <div data-aos="zoom-out-left" class="flex flex-wrap w-[54.2vw] sm:py-24 pt-18 pb-0 ml-32 sm:px-10 px-6 relative">
+                  <img alt="gallery" class=" rounded-br-xl w-full object-cover h-[90%] object-center block brightness-75 hover:brightness-105 absolute duration-150 inset-0" src="https://www.neweracap.com/cdn/shop/files/MULTI24_FallWinter24_HomePage_FeatureSquareSlideshow_1500x1500_351f1d74-0202-4235-993e-bf2e7188fa2a.jpg?v=1724161617&width=2560">
+                  <div class="text-start mt-64 pb-0 relative z-10 w-full">
+                    <h2 class="text-xl text-white font-medium title-font mb-2">Fall Winter 2024
+                    </h2>
+                    <p class="leading-relaxed ">New season, new styles. Give your fan gear <br> a refresh with headwear and apparel from your <br> favorite leagues, including our first NHL collection.
+                    <div class=" w-full mb-5 mt-5 flex justify-start items-start" >
+
+                        <a href="#"
+                         class="relative flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1">
+                         <span
+                             class="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-900 via-purple-600 to-purple-400"></span>
+                         <span
+                             class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                         <span class="relative text-white">Shop Collection</span>
+                     </a>
+         
+                 </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Explore Section -->
+
+    <!-- Frequently Asked -->
+
+    <div class="body-pertanyaan">
+        <div class="container-5">
+            <div data-aos="flip-up" class="title w-auto flex justify-center h-auto md:mb-5">
+                <h1 class="text-2xl md:text-3xl font-extrabold text-black mt-20 ">FREQUENTLY <span class="text-purple-700 italic ">ASKED</span></h1>
+            </div>
+          
+    
+          <div data-aos="flip-up" class="tab">
+            <input type="radio" name="acc" id="acc-1">
+            <label for="acc-1">
+              <h2>01</h2>
+              <h3>Apakah Topier ini memiliki lisensi Authentic?</h3>
+            </label>
+            <div class="content-pertanyaan">
+              <p>Topier sudah memiliki lisensi Authentic sejak 2020, dan telah di akui oleh berbagai brand brand yang menjual topi ternama di dunia yaitu New Era, Nike, Adidas dan masih banyak lagi.</p>
+            </div>
+          </div>
+    
+          <div data-aos="flip-up" class="tab">
+            <input type="radio" name="acc" id="acc-2">
+            <label for="acc-2">
+              <h2>02</h2>
+              <h3>Siapa pendiri Topier?</h3>
+            </label>
+            <div class="content-pertanyaan">
+              <p>Athallah Muhammad Ghiyast Qintara, adalah founder dari Topier, ia dan tim telah membangun Topier dari kecil sampai sebesar sekarang, ia juga memiliki passion sebagai Fullstack Developer di samping itu dia juga pintar berbisnis.</p>
+            </div>
+          </div>
+    
+          <div data-aos="flip-up" class="tab">
+            <input type="radio" name="acc" id="acc-3">
+            <label for="acc-3">
+              <h2>03</h2>
+              <h3>Kapan Topier Berdiri?</h3>
+            </label>
+            <div class="content-pertanyaan">
+              <p>Topier berdiri dari tahun 2018 di Cibubur, Kota Wisata sangat susah untuk mendirikan toko topi dari kecil karena banyak nya saingan yang menyaingi tapi Alhamdulilah Topier menjadi toko topi yang terkenal.</p>
+            </div>
+          </div>
+    
+          <div data-aos="flip-up" class="tab">
+            <input type="radio" name="acc" id="acc-4">
+            <label for="acc-4">
+              <h2>04</h2>
+              <h3>Bagaimana Topi-Topi tersebut di buat?</h3>
+            </label>
+            <div class="content-pertanyaan">
+              <p>Topi-Topi Topier dibuat dengan mesin pengerjaan yang berkerja 24jam dengan hasil yang sempurna, oleh karena itu Topier harus menjaga trust client dengan kualitas yang terbaik.</p>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+
+    <!-- Frequently Asked -->
+
+    <!-- Footer -->
+
+<footer class="bg-purple-700">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="https://flowbite.com/" class="flex items-center">
+                  <span class="self-center text-5xl mt-10 font-semibold whitespace-nowrap text-white">Topier.</span>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                  <ul class="text-white font-medium">
+                      <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Topier</a>
+                      </li>
+                      <li>
+                          <a href="https://tailwindcss.com/" class="hover:underline">Instagram</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                  <ul class="text-white font-medium">
+                      <li class="mb-4">
+                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                      </li>
+                      <li>
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                  <ul class="text-white font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-white sm:mx-auto lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm sm:text-center text-white">© 2023 <a href="https://flowbite.com/" class="hover:underline">Topier™</a>. All Rights Reserved.
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a href="#" class="text-white">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                    </svg>
+                  <span class="sr-only">Facebook page</span>
+              </a>
+              <a href="#" class="text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                        <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                    </svg>
+                  <span class="sr-only">Discord community</span>
+              </a>
+              <a href="#" class="text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Twitter page</span>
+              </a>
+              <a href="#" class="text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                  </svg>
+                  <span class="sr-only">GitHub account</span>
+              </a>
+              <a href="#" class="text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Dribbble account</span>
+              </a>
+          </div>
+      </div>
+    </div>
+</footer>
+
+    <!-- Footer -->
+
+    <!--? Hamburger Script -->
+    <script>
+        const navItems = document.querySelector('.items');
+
+        function onToggle(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navItems.classList.toggle('right-[7%]')
+        }
+    </script>
+
+
+    <!--? Flowbite Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>

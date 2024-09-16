@@ -1,0 +1,59 @@
+
+
+:root{
+    --body-bg: #fffaee;
+    --item-bg: #ffffff;
+}
+
+.partners-section{
+    padding: 64px 0;
+}
+
+.logos-slider{
+    overflow-x: hidden;
+}
+
+.overflow-slider{
+    display: flex;
+    padding: .5rem 1rem;
+    overflow: hidden;
+}
+
+.reverse .logos-wrapper{
+ animation-direction: reverse;
+}
+
+.logos-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    animation: logoLoop 30s linear infinite ;
+}
+
+.logos-item{
+    margin-left: 1rem;
+    padding: 1rem;
+    aspect-ratio: 30/9;
+    background: var(--item-bg);
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    gap: 2rem;
+}
+
+.logos-item img {
+    display: block;
+    height: 6rem;
+    width: 9rem;
+    margin-inline: 8rem;
+}
+
+@keyframes logoLoop {
+    0%{
+        transform: translateX(0);
+    } 
+    100%{
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
